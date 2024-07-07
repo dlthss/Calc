@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Additional = () => {
+const Addition = () => {
     const [num1, setNum1] = useState('');
     const [num2, setNum2] = useState('');
     const [result, setResult] = useState('');
@@ -35,18 +35,18 @@ const Subtraction = () => {
         <h2>Вычитание</h2>
         <input
           type="number"
-          placeholder="Введите первое число"
+          placeholder="Enter First Number"
           value={num1}
           onChange={(e) => setNum1(e.target.value)}
         />
         <input
           type="number"
-          placeholder="Введите второе число"
+          placeholder="Enter Second Number"
           value={num2}
           onChange={(e) => setNum2(e.target.value)}
         />
-        <button onClick={handleCalculate}>Обчислити</button>
-        <p>Результат: {result}</p>
+        <button onClick={handleCalculate}>Result</button>
+        <p>Result: {result}</p>
       </div>
     );
   };
@@ -63,21 +63,21 @@ const Subtraction = () => {
   
     return (
       <div>
-        <h2>Умножение</h2>
+        <h2>Multiplice</h2>
         <input
           type="number"
-          placeholder="Введите первое число"
+          placeholder="Enter First Number"
           value={num1}
           onChange={(e) => setNum1(e.target.value)}
         />
         <input
           type="number"
-          placeholder="Введите второе число"
+          placeholder="Enter Second Number"
           value={num2}
           onChange={(e) => setNum2(e.target.value)}
         />
-        <button onClick={handleCalculate}>Обчислити</button>
-        <p>Результат: {result}</p>
+        <button onClick={handleCalculate}>Result</button>
+        <p>Result: {result}</p>
       </div>
     );
   };
@@ -92,27 +92,27 @@ const Subtraction = () => {
         const res = parseFloat(num1) / parseFloat(num2);
         setResult(res.toString());
       } else {
-        alert('Деление на ноль невозможно');
+        alert('Error');
       }
     };
   
     return (
       <div>
-        <h2>Деление</h2>
+        <h2>Division</h2>
         <input
           type="number"
-          placeholder="Введите первое число"
+          placeholder="Enter First Number"
           value={num1}
           onChange={(e) => setNum1(e.target.value)}
         />
         <input
           type="number"
-          placeholder="Введите второе число"
+          placeholder="Enter Second Number"
           value={num2}
           onChange={(e) => setNum2(e.target.value)}
         />
-        <button onClick={handleCalculate}>Обчислити</button>
-        <p>Результат: {result}</p>
+        <button onClick={handleCalculate}>Result</button>
+        <p>Result: {result}</p>
       </div>
     );
   };
